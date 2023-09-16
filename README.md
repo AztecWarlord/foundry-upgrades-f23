@@ -1,66 +1,17 @@
-## Foundry
+## Foundry UUPS Upgradeable Contracts Example
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+**These Upgradeable Contracts utilize a Proxy Smart contract to reroute new versions of smart contracts**
 
-Foundry consists of:
+## About
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+UUPS Upgradeable Contracts consists of:
 
-## Documentation
+- **V1 Contract**: The initial contract that contains original functionality and upgradeable fucntionality.
+- **V2 Contract**: The new version of initial contract with updated functionality and upgradeable functionality.
+- **Upgrade Contract**: This upgrades V1 contract to new V2 contract.
+- **Deploy Script**: Deploys contracts and initiates the sequence of events.
 
-https://book.getfoundry.sh/
+## Thank You
 
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+[![Michael Vargas Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/michael-vargas-a5b51b223/)
+[![Michael Vargas Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/warlord_aztec)
